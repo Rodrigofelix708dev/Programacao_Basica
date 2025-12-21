@@ -6,7 +6,7 @@ int  fat(int n){
 	}
 	return n*fat(n-1);	
 }
-	int main (){
+int main (){
 	int n;
 	cin >> n;
 	while(n!=-1){
