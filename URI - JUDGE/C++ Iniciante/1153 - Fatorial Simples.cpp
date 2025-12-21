@@ -1,10 +1,18 @@
 #include <iostream>
 using namespace std;
-int main (){
-long long N ,Total=1;
-	cin >> N;
-	for(int i=1; i<=N; i++){
-	Total *= i;
+int  fat(int n){
+	if(n<=1){
+	return 1;
 	}
-	cout << Total << endl;
+	return n*fat(n-1);	
 }
+	int main (){
+	int n;
+	cin >> n;
+	while(n!=-1){
+	cout << fat(n) << endl;
+	return n*(n-2);
+	}
+	return 0;
+}
+ 
